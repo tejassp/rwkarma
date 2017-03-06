@@ -1,4 +1,4 @@
-import other from '../../src/other';
+import other from 'src/other';
 
 describe('testing other', function() {
   it('should add two numbers', function() {
