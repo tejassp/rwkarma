@@ -2,10 +2,6 @@
 // Generated on Mon Mar 06 2017 12:49:49 GMT+0530 (IST)
 
 var path = require('path');
-var webpackConfig = require('./webpack.config.js');
-webpackConfig.resolve = {
-  modules: ['node_modules', path.resolve(__dirname)]
-};
 
 module.exports = function(config) {
   config.set({
@@ -28,7 +24,26 @@ module.exports = function(config) {
     ],
 
     // webpack configuration
-    webpack: webpackConfig,
+    // webpack: webpackConfig,
+    webpack: {
+      module : {
+        loaders : [
+          {
+            test : /\.jsx?/,
+            loader : 'babel-loader',
+            query: {
+              presets: ['es2015', 'react']
+            },
+          }
+        ]
+      },
+    
+      devtool: 'inline-source-map',
+
+      resolve: {
+        modules: ['node_modules', path.resolve(__dirname)]
+      },
+    },
 
     // list of files to exclude
     exclude: [

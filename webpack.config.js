@@ -16,10 +16,13 @@ var config = {
         test : /\.jsx?/,
         include : APP_DIR,
         loader : 'babel-loader',
+        query: {
+          presets: ['es2015', 'react']
+        },
       }
     ]
   },
-  devtool: 'inline-sorce-map',
+  devtool: 'inline-source-map',
 };
 
 module.exports = config;
