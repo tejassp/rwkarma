@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build":   "./node_modules/.bin/webpack",
+    "docs":    "./node_modules/.bin/jsdoc -c jsdoc.conf.json",
     "e2e":     "./node_modules/protractor/bin/protractor tests/protractor-config.js",
     "format":  "node beautify.js",
     "serve":   "node server.js",
@@ -21,6 +22,7 @@
     "babel-preset-react": "^6.23.0",
     "esformatter": "^0.10.0",
     "jasmine-core": "^2.5.2",
+    "jsdoc": "^3.4.3",
     "karma": "^1.5.0",
     "karma-jasmine": "^1.1.0",
     "karma-sourcemap-loader": "^0.3.7",

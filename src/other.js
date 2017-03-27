@@ -1,3 +1,4 @@
+/** the other variable */
 var other = {
   add: function(x, y) {
     return x + y;
