@@ -1,13 +1,13 @@
 import React from 'react';
 
 class Message extends React.Component {
-  render () {
+  render() {
     var name = this.props.name || ' stranger';
     return (
-        <div> 
-          <h3> Hi {name} </h3> 
-        </div>
-    );
+      <div>
+        <h3> Hi { name } </h3>
+      </div>
+      );
   }
 }
 

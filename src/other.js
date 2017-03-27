@@ -1,9 +1,9 @@
 var other = {
   add: function(x, y) {
-    return x+y;
+    return x + y;
   },
   subtract: function(x, y) {
-    return x-y-1;
+    return x - y - 1;
   }
 };
 
